@@ -16,37 +16,43 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
-  <body>
-    <div class="board-container">
-      <div class="content">
-        <div class="home-container">
-          <h1>Home</h1>
-          <div class="score-box">
-            <p class="score-home">00</p>
-          </div>
-          <div class="btn-container">
-            <button class="btn" id="btn-home">+1</button>
-            <button class="btn" id="btn-home2">+2</button>
-            <button class="btn" id="btn-home3">+3</button>
-          </div>
-        </div>
-        <div class="guest-container">
-          <h1>Guest</h1>
-          <div class="score-box">
-            <p class="score-guest">00</p>
-          </div>
-          <div class="btn-container">
-            <button class="btn" id="btn-guest">+1</button>
-            <button class="btn" id="btn-guest2">+2</button>
-            <button class="btn" id="btn-guest3">+3</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="reset">
-        <button id="reset-btn">New game</button>
-      </div>
+  <body class="dark">
+    <div class="toggle-container">
+      <button class="toggle-btn">Dark mode</button>
     </div>
+    <section>
+      <div class="board-container">
+        <div class="content">
+          <div class="home-container">
+            <h1>Home</h1>
+            <div class="score-box">
+              <p class="score-home">00</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn" id="btn-home">+1</button>
+              <button class="btn" id="btn-home2">+2</button>
+              <button class="btn" id="btn-home3">+3</button>
+            </div>
+          </div>
+          <div class="guest-container">
+            <h1>Guest</h1>
+            <div class="score-box">
+              <p class="score-guest">00</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn" id="btn-guest">+1</button>
+              <button class="btn" id="btn-guest2">+2</button>
+              <button class="btn" id="btn-guest3">+3</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="reset">
+          <button id="reset-btn">New game</button>
+        </div>
+      </div>
+    </section>
     <script src="index.js"></script>
+    <script src="toggle.js"></script>
   </body>
 </html>

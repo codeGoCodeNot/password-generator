@@ -1,15 +1,28 @@
-body {
+body.dark {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
   background: #181818;
   font-family: 'Inter', sans-serif;
-  color: #ffffffe3;
-  height: 100vh;
   /*font-family: 'Cursed Timer ULiL', sans-serif;*/
   font-size: 16px;
+}
+
+body.light {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+section {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .board-container {
@@ -63,6 +76,7 @@ P {
 h1 {
   text-shadow: 0 0 2px #000;
   margin-bottom: -10px;
+  color: #ffffffe3;
 }
 
 .btn {
@@ -76,7 +90,8 @@ h1 {
 }
 
 .btn:hover,
-#reset-btn:hover {
+#reset-btn:hover,
+.toggle-btn:hover {
   background: #e0e0e0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
@@ -90,4 +105,33 @@ h1 {
   cursor: pointer;
   padding: 10px 15px;
   font-size: 1.2rem;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+.toggle-btn {
+  background: rgb(205, 205, 209);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 14px;
+}
+
+body.light .toggle-btn {
+  color: #ffffffe3;
+  background: #181818;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 14px;
+}
+
+body.light .toggle-btn:hover {
+  background: #1d1d1d;
+  box-shadow: 0 2px 6px rgba(245, 243, 243, 0.979);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
 }
