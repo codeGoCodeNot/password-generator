@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background: #181818;
+  font-family: 'Inter', sans-serif;
+  color: #ffffffe3;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /*font-family: 'Cursed Timer ULiL', sans-serif;*/
+  font-size: 16px;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  /*background-color: #1b244a;*/
+  background-image: url('https://wallpapers.com/images/hd/4k-basketball-spalding-ball-wpc8tpur4en3be2w.jpg');
+  background-size: contain;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  box-shadow: 0 0 10px 3px #181818;
+  border-radius: 5px;
+}
+
+.home-container,
+.guest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.score-box {
+  background: #080001;
+  width: 70px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(200, 180, 150, 0.6);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+P {
+  font-family: 'Cursed Timer ULiL', sans-serif;
+  color: #f94f6d;
+  font-size: 2rem;
+}
+
+h1 {
+  text-shadow: 0 0 2px #000;
+  margin-bottom: -10px;
+}
+
+.btn {
+  width: 50px;
+  background: #ffffffe3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Cursed Timer ULiL', sans-serif;
+  padding: 10px 15px;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
