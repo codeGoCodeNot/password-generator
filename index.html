@@ -3,57 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Score Board</title>
-    <link
-      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
-      rel="stylesheet"
-    />
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <body>
+    <section class="dark">
+      <div class="toggle-btn">
+        <button class="btn dark">Dark mode</button>
+      </div>
 
-  <body class="dark">
-    <div class="toggle-container">
-      <button class="toggle-btn">Dark mode</button>
-    </div>
-    <section>
-      <div class="board-container">
-        <div class="content">
-          <div class="home-container">
-            <h1>Home</h1>
-            <div class="score-box">
-              <p class="score-home">00</p>
-            </div>
-            <div class="btn-container">
-              <button class="btn" id="btn-home">+1</button>
-              <button class="btn" id="btn-home2">+2</button>
-              <button class="btn" id="btn-home3">+3</button>
-            </div>
+      <div class="content-container">
+        <div class="content dark">
+          <div class="text">
+            <h1>Generate a</h1>
+            <h1 id="random-p">random password</h1>
+            <p>Never use an insecure password again.</p>
           </div>
-          <div class="guest-container">
-            <h1>Guest</h1>
-            <div class="score-box">
-              <p class="score-guest">00</p>
-            </div>
-            <div class="btn-container">
-              <button class="btn" id="btn-guest">+1</button>
-              <button class="btn" id="btn-guest2">+2</button>
-              <button class="btn" id="btn-guest3">+3</button>
-            </div>
-          </div>
-        </div>
 
-        <div class="reset">
-          <button id="reset-btn">New game</button>
+          <div class="password-container">
+            <button class="btn-password">Generate passwords</button>
+          </div>
+
+          <div class="line">
+            <hr class="soft-line dark" />
+          </div>
+
+          <div class="btn-container">
+            <button class="copy-btn"></button>
+            <button class="copy-btn"></button>
+          </div>
         </div>
       </div>
     </section>
-    <script src="index.js" defer></script>
-    <script src="toggle.js" defer></script>
+    <script src="index.js"></script>
   </body>
 </html>

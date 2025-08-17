@@ -1,150 +1,140 @@
-body.dark {
+html,
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
-  background: #181818;
-  font-family: 'Inter', sans-serif;
-  /*font-family: 'Cursed Timer ULiL', sans-serif;*/
-  font-size: 16px;
-}
-
-body.light {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
-  background: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  height: 100%;
+  overflow: hidden;
 }
 
 section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
 }
 
-.board-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-
-  /*background-color: #1b244a;*/
-  background-image: url('https://wallpapers.com/images/hd/4k-basketball-spalding-ball-wpc8tpur4en3be2w.jpg');
-  background-size: contain;
-  width: 600px;
-  height: 400px;
-  margin: auto;
-  box-shadow: 0 0 10px 3px #181818;
-  border-radius: 5px;
+section.dark {
+  background: #1c1c1c;
+  color: #e5e7eb;
 }
 
-.home-container,
-.guest-container {
+section.light {
+  background: #f9fafb;
+  color: #111827;
+}
+
+.toggle-btn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: end;
   padding: 10px;
-  gap: 20px;
+}
+
+.btn.dark {
+  background: #1c1c1c;
+  color: #e5e7eb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px;
+}
+
+.btn.light {
+  color: #1c1c1c;
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px;
+}
+
+.btn.dark:hover {
+  background: #222a2a;
+}
+
+.btn.light:hover {
+  background: #f3f4f6;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .content {
   display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.score-box {
-  background: #080001;
-  width: 70px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(200, 180, 150, 0.6);
-  padding: 10px;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+  padding: 0 40px;
+  width: 550px;
+  height: 550px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-P {
-  font-family: 'Cursed Timer ULiL', sans-serif;
-  color: #f94f6d;
-  font-size: 2rem;
+.content.dark {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.content.light {
+  background: #e5e7eb;
+  color: #1c1c1c;
 }
 
 h1 {
-  text-shadow: 0 0 2px #000;
-  margin-bottom: -10px;
-  color: #ffffffe3;
+  font-size: 3rem;
+  line-height: 0.3;
 }
 
-.btn {
-  width: 50px;
-  background: #ffffffe3;
+.password-container {
+  padding: 20px 0;
+  margin: 30px 0;
+}
+
+.btn-password {
+  color: #e5e7eb;
+  background-color: #10b981;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Cursed Timer ULiL', sans-serif;
-  padding: 10px 15px;
+  padding: 7px 14px;
+  font-weight: bold;
 }
 
-.btn:hover,
-#reset-btn:hover,
-.toggle-btn:hover {
-  background: #e0e0e0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
+.btn-password:hover {
+  background-color: #059669;
+  color: #fff;
 }
 
-#reset-btn {
-  background: #ffffffe3;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px 15px;
-  font-size: 1.2rem;
+#random-p {
+  color: #10b981;
 }
 
-.toggle-container {
+.line {
   display: flex;
-  justify-content: end;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
 }
 
-.toggle-btn {
-  background: rgb(205, 205, 209);
+.soft-line {
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 8px 14px;
-  color: #181818;
+
+  margin: 16px 0;
+  width: 100%;
+  opacity: 0.2;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-body.dark .toggle-btn {
-  background: rgb(205, 205, 209);
-  color: #181818;
-}
-body.dark .toggle-btn:hover {
-  background: #e0e0e0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
+.soft-line.dark {
+  border-top: 2px solid #d1d5db;
 }
 
-body.light .toggle-btn {
-  color: #ffffffe3;
-  background: #181818;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 8px 14px;
-}
-
-body.light .toggle-btn:hover {
-  background: #1d1d1d;
-  box-shadow: 0 2px 6px rgba(245, 243, 243, 0.979);
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
+.soft-line.light {
+  border-top: 2px solid #4b5563;
 }
