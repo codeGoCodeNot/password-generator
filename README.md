@@ -21,10 +21,6 @@ A simple password generator built with vanilla JavaScript, HTML, and CSS.
 - HTML5
 - CSS3 (optional for styling)
 
-## Demo
-
-_Add a screenshot or GIF here if you want, Bro!_
-
 ## License
 
 MIT
