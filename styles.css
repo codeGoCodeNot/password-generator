@@ -71,8 +71,9 @@ section.light {
   height: 100%;
   font-family: 'Karla', sans-serif;
   padding: 0 40px;
-  width: 550px;
-  height: 550px;
+  max-width: 550px;
+  width: 100%;
+  max-height: 550px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -137,4 +138,28 @@ h1 {
 
 .soft-line.light {
   border-top: 2px solid #4b5563;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  gap: 16px;
+  padding: 50px 0;
+}
+
+.copy-btn {
+  flex: 1;
+  min-width: 120px;
+  max-width: 220px;
+  height: 30px;
+  background: #273549;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #4b5563;
+  color: #fff;
 }
