@@ -112,6 +112,17 @@ passwordBtn.addEventListener('click', () => {
   passwordField2.textContent = password2;
 });
 
+const copyBtns = document.querySelectorAll('.copy-btn');
+copyBtns.forEach((copyBtn) => {
+  copyBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const password = copyBtn.textContent;
+
+    navigator.clipboard.writeText(password);
+  });
+});
+
 function toggleMode() {
   const btn = document.querySelector('.btn');
   btn.addEventListener('click', (e) => {
