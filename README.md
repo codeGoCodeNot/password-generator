@@ -21,6 +21,10 @@ A simple password generator built with vanilla JavaScript, HTML, and CSS.
 - HTML5
 - CSS3 (optional for styling)
 
+ ## Live Demo
+
+Try it here: [generate-pas.netlify.app](https://generate-pas.netlify.app/)
+
 ## License
 
 MIT
